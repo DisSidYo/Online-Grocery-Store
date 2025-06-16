@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>The Basketeers Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo"><img src="https://api.iconify.design/lucide/shopping-cart.svg" alt="Cart Icon" width="32" height="32" style="color: white;";>
+                    
+                        <button class="button-heading"><h1>The Basketeers</h1></button>
+                        
+
+                    
+                </div>
+                <div class="header-button">
+                    
+                    <button class="btn-primary">
+                        <!-- <a href="cart.html">Cart</a> -->
+                         Cart
+
+                    </button>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <nav class="categories">
+                    <div class="category-item">
+                        <button class="category-btn">
+                            <img src="https://api.iconify.design/lucide/snowflake.svg" alt="Frozen Icon" width="24" height="24">
+                            <a href="filterprods.php?category=1000">Frozen</a> 
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="filterprods.php?category=1000&subcategory=2">Ice Cream</a>
+                            <a href="filterprods.php?category=1000&subcategory=1">Frozen food</a>
+                            
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn">
+                        <img src="https://api.iconify.design/lucide/home.svg" alt="Home Icon" width="24" height="24">                           
+                        <a href="filterprods.php?category=2000">Home</a>                            
+                            
+                        </button>
+                        <div class="dropdown-menu">
+                        <a href="filterprods.php?category=2000&subcategory=3">Medicine</a>                            
+                        <a href="filterprods.php?category=2000&subcategory=4">Everyday Use</a>      
+                        <a href="filterprods.php?category=2000&subcategory=5">Cleaning</a>                           
+                     
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn">
+                            <img src="https://api.iconify.design/lucide/apple.svg" alt="Fresh Icon" width="24" height="24">                            <a href="filterprods.php?category=3000">Fresh</a> 
+                        </button>
+                        <div class="dropdown-menu">
+                        <a href="filterprods.php?category=3000&subcategory=6">Food</a>                            
+                        <a href="filterprods.php?category=3000&subcategory=7">Fruits</a>                            
+                                                    
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn">
+                            <img src="https://api.iconify.design/lucide/coffee.svg" alt="Beverages Icon" width="24" height="24">
+                            <a href="filterprods.php?category=4000">Snacks</a> 
+                        </button>
+                        <div class="dropdown-menu">
+                        <a href="filterprods.php?category=4000&subcategory=8">Tea</a>                            
+                        <a href="filterprods.php?category=4000&subcategory=9">Coffee</a>                            
+                        <a href="filterprods.php?category=4000&subcategory=10">Chocolate</a>                            
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-btn">
+                            <img src="https://api.iconify.design/lucide/dog.svg" alt="Pet Food Icon" width="24" height="24">
+                            <a href="filterprods.php?category=5000">Pets</a> 
+                        </button>
+                        <div class="dropdown-menu">
+                        <a href="filterprods.php?category=5000&subcategory=11">Dog Food</a>                            
+                        <a href="filterprods.php?category=5000&subcategory=12">Bird Food</a>                            
+                        <a href="filterprods.php?category=5000&subcategory=13">Cat Food</a>                            
+                        <a href="filterprods.php?category=5000&subcategory=14">Fish Food</a>                            
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="search-container">
+                    <form action="viewproducts.php" method="post">
+                        <button type="submit" class="search-icon">
+                            <img src="https://api.iconify.design/lucide/search.svg" alt="Search Icon" width="20" height="20">
+                        </button>
+                        <input type="hidden" name="search" value="search">
+                        <input type="text" id="searchInput" placeholder="Search for products..." class="search-bar" name="search">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- <div class="featured-grid">
+                <div class="featured-card">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80" alt="Fresh Produce">
+                    <div class="card-content">
+                        <h3>Fresh Produce</h3>
+                        <p>Farm-fresh fruits and vegetables delivered daily</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="featured-card">
+                    <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&q=80" alt="Fresh Bread">
+                    <div class="card-content">
+                        <h3>Freshly Baked</h3>
+                        <p>Artisanal breads and pastries baked every morning</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div> -->
+            <div class="welcome-section"></div>
+            <h2>Welcome to The Basketeers Grocery Store!</h2>
+
+            <p>Craving for groceries, my dear?</p>
+            <p>No fear!</p>
+            <p><strong>The Basketeers are here!</strong></p>
+        
+            <p>Check out the list of our products below:</p>
+        
+            <div class="content">
+                <p text-color="white">We have a wide range of products to choose from.</p>
+                <a href="show.php" class="btn-secondary">All Products</a>
+            </div>
+            </div>
+               
+               
+
+           
+        
+
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
